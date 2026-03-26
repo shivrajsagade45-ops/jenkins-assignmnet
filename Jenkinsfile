@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/shivrajsagade45-ops/jenkins-assignmnet.git'
-            }
-        }
-
         stage('Deploy to Apache') {
             steps {
                 sh '''
